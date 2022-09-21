@@ -1,5 +1,12 @@
 # Introducción a la programación
 
+## Contenidos
+
+- [Algoritmos y programas](#algoritmos-y-programas)
+- [Paradigmas de programación](#paradigmas-de-programación)
+- [Lenguajes de programación](#lenguajes-de-programación)
+- [Compiladores e intérpretes](#compiladores-e-intérpretes)
+
 ## Algoritmos y programas
 
 Un **algoritmo** es una secuencia ordenada de pasos sin ambigüedad que resielve un problema. No depende de un lenguaje de programación, puede ser expresado con distintos lenguajes.
