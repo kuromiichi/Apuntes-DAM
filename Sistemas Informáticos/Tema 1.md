@@ -1,10 +1,9 @@
-# Resumen sin ordenar (Sistemas Informáticos)
-
+# Introducción a los Sistemas Informáticos
 ## Contenidos
 
 - [Estructura de un sistema informático](#estructura-de-un-sistema-informático)
 - [Representación de la información](#representación-de-la-información)
-- [Arquitectura de ordenadores]()
+- [Arquitectura de ordenadores](#arquitectura-de-ordenadores)
 
 ## Estructura de un sistema informático
 
@@ -86,3 +85,79 @@ Para detectar errores en códigos binarios se añaden códigos redundantes que l
 - Hamming: intercala bits de control en la palabra. Detecta errores en dos bits y puede corregir uno.
 
 - Código de redundancia cíclica: se genera un código de detección que resulta del resto del código entre un algoritmo generador. Se usa en Internet.
+
+## Arquitectura de ordenadores
+
+Un **ordenador** es una máquina programable de propósito general que procesa información y resuelve problemas para los que ha sido programada.
+
+La **arquitectura** de un ordenador es el diseño conceptual y la estructura fundamental del ordenador. Existen dos arquitecturas de referencia en función de la organización de la memoria y la comunicación con la CPU:
+
+- Arquitectura Harvard: tiene una memoria para datos y otra para instrucciones, conectadas por buses independientes a la CPU. Permite el acceso simultáneo a datos e instrucciones.
+
+- Arquitectura Von Neumann: La CPU se comunica con una única memoria para datos e instrucciones a través de un bus común. Los programas se ejecutan de forma secuencial y no permite el acceso simultáneo a datos e instrucciones.
+
+La arquitectura de referencia usada en la actualidad es la Von Neumann. Esta define un ordenador basado en una serie de unidades funcionales interconectadas mediante buses.
+
+La CPU, la unidad de memoria y la unidad de entrada/salida se comunican a través de un bus de direcciones, un bus de datos y un bus de control.
+
+Unidades funcionales:
+
+- CPU: procesa la información y controla el funcionamiento del resto de unidades.
+- Memoria: almacena datos y programas.
+- Entrada/salida:  comunica al ordenador con el exterior.
+
+Buses:
+
+- Bus de direcciones: indica una dirección de memoria para leer o escribir.
+- Bus de datos: transmite información entra las unidades.
+- Bus de control: la CPU manda señales de control que manejan el comportamiento de las otras unidades.
+
+### Unidad de memoria
+
+La unidad de **memoria** tiene dos componentes:
+
+- Registros: elementos electrónicos digitales que almacenan palabras pequeñas (entre 8 y 64 bits).
+- Memoria: elemento electrónico digital compuesto por muchos registros de la misma longitud. Su capacidad es igual al número de palabras por la longitud de los registros.
+
+Cada palabra está identificada por una dirección de memoria; $n$ bits de dirección permiten direccionar hasta $2^n$ palabras.
+
+La unidad de memoria está formada por una memoria con señales de lectura y escritura, y dos registros:
+
+- Registro de **direcciones**: guarda la dirección de memoria a la que se quiere acceder.
+- Registro de **memoria**: almacena los datos que se escriben o se extraen de la memoria.
+
+### Unidad aritmético-lógica
+
+La ALU realiza operaciones aritméticas o lógicas sobre datos en función de las instrucciones de la unidad de control. Su principal componente es el **operador**, que realiza operaciones sobre dos operandos y las almacena en un *acumulador**. Los operadores pueden venir del bus de datos o de la **batería de registros** de la ALU. El **registro de estado** almacena información sobre el resultado de las operaciones.
+
+### Unidad de control
+
+La UC genera secuencias de control en función de las instrucciones de un programa en sincronización con un reloj. El registro conocido como **contador de programa** almacena la dirección en memoria de la siguiente instrucción a ejecutar, que luego se almacena en el **registro de instrucciones**. El circuito de control tiene un **decodificador** que traduce las instrucciones en micro-operaciones y un **secuenciador** que las transforma en señales de control para el resto de componentes. 
+
+La unidad de control realiza su función en dos fases:
+
+- Ciclo de búsqueda:
+    - Contador de Programa -> Registro de Direcciones
+    - Lectura de instrucción en memoria -> Registro de Memoria+
+    - Registro de memoria -> Registro de Instrucciones
+    - Incremento del Contador de Programa
+- Ciclo de ejecución
+    - Registro de Instrucciones -> Decodificador
+    - Descomposición de micro-operaciones y secuenciación
+
+### Unidad de entrada/salida
+
+La unidad de E/S comunica la CPU con los periféricos para introducir o presentar información. Direcciona los dispositivos, establece un enlace y controla la transferencia de la información.
+
+La **interfaz** adapta la información del controlador a la CPU y gestiona la comunicación. Tiene un decodificador de direcciones, un registro de estado, un registro de datos y un controlador de interfaz. El **controlador** es específico de cada dispositivo y controla el funcionamiento del periférico.
+
+La unidad de E/S puede organizarse por medio de dos formas:
+
+- Bus único: usa los buses e instrucciones del sistema para realizar las comunicaciones, pero no de forma simultánea.
+- Bus dedicado: isa sus propios buses e instrucciones.
+
+Existen distintos procedimientos para realizar la entrada/salida:
+
+- Controlada por programa: la instrucción desencadena la entrada/salida.
+- Controlada por interrupción: el periférico solicita la transferencia mediante una instrucción de interrupción.
+- Acceso Directo a Memoria: la interfaz DMA crea una transferencia directa entre el periférico y una posición de la memoria indicada por la CPU.

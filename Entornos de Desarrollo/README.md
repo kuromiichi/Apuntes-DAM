@@ -2,4 +2,4 @@
 
 ## Contenidos
 
-1. [Desarrollo de software](./Tema%201.md)
+1. [Desarrollo de software](Tema%201.md)
