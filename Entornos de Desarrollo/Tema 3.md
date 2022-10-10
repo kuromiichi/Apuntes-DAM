@@ -301,3 +301,60 @@ Existen ramas de mantenimiento o corrección que sirven para reparar rápidament
 
 ## GitHub
 
+GitHub es una plataforma para trabajar con repositorios remotos. Git tiene comandos para publicar los repositorios locales en repositorios remotos.
+
+### **Clonación de repositorios**
+> `git clone <url>`
+
+Descarga una copia del repositorio remoto en el directorio actual.
+
+> `git clone --depth 1 <url>`
+
+Crea una copia con el historial truncado al último commit.
+
+### **Añadir un repositorio remoto**
+> `git remote add origin <url>`
+
+Asocia un repositorio remoto al repositorio local. Los cambios se publican al repositorio remoto indicado (_origin_).
+
+### **Lista de repositorios remotos**
+> `git remote`
+
+Muestra una lista con los repositorios remotos asociados al repositorio local.
+
+> `git remote -v`
+
+Muestra las URL independientes de cada repositorio remoto.
+
+### **Descargar cambios de un repositorio remoto**
+> `git pull <remoto> <rama>`
+
+Descarga los cambios del repositorio remoto y la rama especificados y los integra en el repositorio local. Por defecto descarga todo el repositorio.
+
+### **Enviar cambios a un repositorio remoto**
+> `git push <remoto> <rama>`
+
+Envía los cambios de la rama especificada al remoto. Por defecto envía todo el repositorio.
+
+### **Eliminar un repositorio remoto**
+> `git remote remove <remoto>`
+
+Desenlaza el repositorio local con el remoto especificado.
+
+## Colaborar con GitHub
+
+Existen dos formas de colaborar en GitHub:
+
+- Ser colaborador del repositorio (control total sobre el proyecto).
+- Replicar el proyecto y solicitar integración de cambios (pull request).
+
+El segundo método es el más común, ya que no permite subir contenido sin autorización y proporciona más control sobre los cambios añadidos.
+
+Para hacer un pull request se sigue una serie de pasos:
+
+- Crear un _fork_ del repositorio (copiar el repositorio).
+- Clonar el repositorio para trabajar sobre él.
+- Crear una rama para añadir los cambios.
+- Añadir y confirmar los cambios en la rama creada.
+- Enviar los cambios a GitHub.
+- Crear un pull request en el repositorio original.
