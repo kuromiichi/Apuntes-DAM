@@ -16,19 +16,19 @@ Se llama **ingeniería del software** a la ciencia y el arte de especificar, dis
 
 El proceso de desarrollo sigue una serie de pasos ordenados que garantizan la creación de programas fiables y eficientes.
 
-1. Planificación: se define el ámbito del proyecto, sus objetivos y se estudia la viabilidad y el coste.
+1. **Planificación**: se define el ámbito del proyecto, sus objetivos y se estudia la viabilidad y el coste.
 
-2. Análisis: se detalla exactamente la tarea que tiene que llevar a cabo el programa. Se concretan los requisitos funcionales y se llega a un modelo.
+2. **Análisis**: se detalla exactamente la tarea que tiene que llevar a cabo el programa. Se concretan los requisitos funcionales y se llega a un modelo.
 
-3. Diseño: en esta fase se decide _cómo_ se va a hacer el proyecto, dividiendo el problema en partes pequeñas y estudiando múltiples soluciones para elegir la más apropiada.
+3. **Diseño**: en esta fase se decide _cómo_ se va a hacer el proyecto, dividiendo el problema en partes pequeñas y estudiando múltiples soluciones para elegir la más apropiada.
 
-4. Codificación: los algoritmos diseñados se traducen al lenguaje de programación más adecuado y se implementa el proyecto.
+4. **Codificación**: los algoritmos diseñados se traducen al lenguaje de programación más adecuado y se implementa el proyecto.
 
-5. Pruebas: permiten corregir los posibles errores (sintácticos o semánticos) mediante verificación y validación del código.
+5. **Pruebas**: permiten corregir los posibles errores (sintácticos o semánticos) mediante verificación y validación del código.
 
-6. Despliegue: el programa se publica y se instala en la máquina del usuario final.
+6. **Despliegue**: el programa se publica y se instala en la máquina del usuario final.
 
-7. Mantenimiento: se asegura el correcto funcionamiento y se añaden funcionalidades al programa. Hay tres tipos:
+7. **Mantenimiento**: se asegura el correcto funcionamiento y se añaden funcionalidades al programa. Hay tres tipos:
 
     - Mantenimiento correctivo (eliminar defectos)
     - Mantenimiento adaptivo (adaptar lo existente)
