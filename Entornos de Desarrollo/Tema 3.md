@@ -92,7 +92,7 @@ Crea una copia local independiente del repositorio.
 
 Muestra el estado de los cambios desde la última versión guardada. Compara el workspace con el último commit.
 
-### **Añadir a stage**
+### **Añadir al staging area**
 > `git add <fichero/directorio>`
 
 Añade/actualiza los cambios en el fichero/directorio al staging area.
@@ -162,9 +162,9 @@ Muestra las diferencias entre el staging area y el último commit.
 Muestra las diferencias entre el workspace y el último commit.
 
 ### **Volver a una versión anterior del workspace**
-> `git checkout <commit> <fichero>`
+> `git checkout <commit> -- <fichero>`
 
-Cambia un archivo por la versión guardada en el repositorio local y crea una rama desde el commit.
+Cambia el fichero del workspace por la versión guardada en el commit especificado.
 
 ### **Eliminar cambios del staging area**
 > `git reset <fichero>`
@@ -176,14 +176,14 @@ Elimina los cambios del staging area en un archivo, pero no toca el workspace.
 
 Elimina todos los cambios posteriores al commit elegido y actualiza el workspace a esa versión.
 
-> `git revert <fichero>`
+> `git revert <commit>`
 
-Crea un nuevo commit que deshace los cambios del commit anterior.
+Crea un nuevo commit que deshace los cambios del commit especificado sin borrar los commits posteriores.
 
 ### **Combinar commits**
 > `git rebase -i <hash/HEAD>`
 
-Combina los commits especificados en uno solo.
+Combina los commits especificados en uno solo. El parámetro `-i` permite hacer el rebase de forma interactiva.
 
 ### **Ignorar ficheros**
 > Fichero .gitignore
