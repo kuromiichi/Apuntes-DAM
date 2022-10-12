@@ -93,6 +93,7 @@ Crea una copia local independiente del repositorio.
 Muestra el estado de los cambios desde la última versión guardada. Compara el workspace con el último commit.
 
 ### **Añadir al staging area**
+
 > `git add <fichero/directorio>`
 
 Añade/actualiza los cambios en el fichero/directorio al staging area.
@@ -162,7 +163,6 @@ Muestra las diferencias entre el staging area y el último commit.
 Muestra las diferencias entre el workspace y el último commit.
 
 ### **Volver a una versión anterior del workspace**
-> `git checkout <commit> -- <fichero>`
 
 Cambia el fichero del workspace por la versión guardada en el commit especificado.
 
