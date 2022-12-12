@@ -128,7 +128,7 @@ La unidad de memoria está formada por una memoria con señales de lectura y esc
 
 ### Unidad aritmético-lógica
 
-La ALU realiza operaciones aritméticas o lógicas sobre datos en función de las instrucciones de la unidad de control. Su principal componente es el **operador**, que realiza operaciones sobre dos operandos y las almacena en un *acumulador**. Los operadores pueden venir del bus de datos o de la **batería de registros** de la ALU. El **registro de estado** almacena información sobre el resultado de las operaciones.
+La ALU realiza operaciones aritméticas o lógicas sobre datos en función de las instrucciones de la unidad de control. Su principal componente es el **operador**, que realiza operaciones sobre dos operandos y las almacena en un **acumulador**. Los operadores pueden venir del bus de datos o de la **batería de registros** de la ALU. El **registro de estado** almacena información sobre el resultado de las operaciones.
 
 ### Unidad de control
 
